@@ -18,6 +18,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: cd documentation
-      - run: pip install -r ./requirements.txt
-      - run: mkdocs gh-deploy --force
+      - name: Deploy
+        working-directory: ./documentation
+        run: |
+          pip install -r ./requirements.txt
+          mkdocs gh-deploy --force
