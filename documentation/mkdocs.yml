@@ -1,0 +1,42 @@
+site_name: "Introduction to Programming and Python"
+markdown_extensions:
+  - attr_list
+  - md_in_html
+plugins:
+  - glightbox
+  - search
+nav:
+  - Home: "index.md"
+  - Set Up: "set-up.md"
+  - Lesson 1:
+    - Python Background: "lesson-1/python-background.md"
+  - Lesson 2:
+    - Types: "lesson-2/types.md"
+theme:
+  name: material
+  logo: ./images/gdsc_logo.png
+  favicon: ./images/gdsc_logo.png
+  font:
+    text: Lato
+    code: Roboto Mono
+  features:
+    - navigation.tracking
+    - navigation.tabs.sticky
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: blue grey
+      accent: green
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: green
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
